@@ -3,35 +3,44 @@ import DashboardLayout from '../layout/DashboardLayout.vue'
 import NotFound from '../pages/NotFoundPage.vue'
 
 // Admin pages
-import Overview from 'src/pages/Overview.vue'
-import UserProfile from 'src/pages/UserProfile.vue'
+import CameraData from "src/pages/CameraData";
+import CtrlMotor from 'src/pages/CtrlMotor.vue'
+import RobotData from 'src/pages/RobotData.vue'
+import Camera from 'src/pages/Camera.vue'
 import TableList from 'src/pages/TableList.vue'
-import Typography from 'src/pages/Typography.vue'
 import Icons from 'src/pages/Icons.vue'
-import Maps from 'src/pages/Maps.vue'
-import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 
 const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/admin/overview'
+    redirect: '/admin/robotData'
   },
   {
     path: '/admin',
     component: DashboardLayout,
-    redirect: '/admin/overview',
+    redirect: '/admin/robotData',
     children: [
       {
-        path: 'overview',
-        name: 'Overview',
-        component: Overview
+        path: 'robotData',
+        name: 'RobotData',
+        component: RobotData
       },
       {
-        path: 'user',
-        name: 'User',
-        component: UserProfile
+        path: 'ctrlMotor',
+        name: 'CtrlMotor',
+        component: CtrlMotor
+      },
+      {
+        path: 'camera',
+        name: 'Camera',
+        component: Camera
+      },
+      {
+        path: 'cameraData',
+        name: 'CameraData',
+        component: CameraData
       },
       {
         path: 'table-list',
@@ -39,24 +48,9 @@ const routes = [
         component: TableList
       },
       {
-        path: 'typography',
-        name: 'Typography',
-        component: Typography
-      },
-      {
         path: 'icons',
         name: 'Icons',
         component: Icons
-      },
-      {
-        path: 'maps',
-        name: 'Maps',
-        component: Maps
-      },
-      {
-        path: 'notifications',
-        name: 'Notifications',
-        component: Notifications
       },
       {
         path: 'upgrade',

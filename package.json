@@ -13,9 +13,12 @@
     "lint-fix": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "bootstrap": "^4.3.1",
     "chartist": "^0.11.0",
+    "element-ui": "^2.15.9",
     "google-maps": "^3.2.1",
+    "jQuery": "^1.7.4",
     "register-service-worker": "^1.5.2",
     "v-tooltip": "^2.0.0-rc.33",
     "vue": "^2.6.6",
@@ -27,13 +30,25 @@
     "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-plugin-pwa": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
+    "expose-loader": "^4.0.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
     "vue-template-compiler": "^2.6.6"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not ie <= 11"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yzywty/704-vue.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yzywty/704-vue/issues"
+  },
+  "homepage": "https://github.com/yzywty/704-vue#readme"
 }
